@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Prakesh - Official Website</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Playfair Display (for headings) and Lato (for body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Apply custom fonts */
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #FDFDFB; /* A warm, very light off-white */
+        }
+        
+        h1, h2, h3, .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Custom Colors */
+        .text-navy { color: #1a253c; }
+        .bg-navy { background-color: #1a253c; }
+        .hover\:bg-navy-dark:hover { background-color: #121a29; }
+        .text-gold { color: #bfa181; }
+        .border-gold { border-color: #bfa181; }
+
+        /* Simple animation for content fade-in */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="text-gray-700 antialiased">
+
+    <!-- Main Container -->
+    <div class="min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8">
+        
+        <div class="w-full max-w-4xl mx-auto text-center">
+            
+            <!-- Header/Navigation -->
+            <header class="w-full mb-16 fade-in" style="animation-delay: 0.1s;">
+                 <nav class="flex justify-center items-center space-x-6 sm:space-x-10 text-navy">
+                    <a href="#" class="hover:text-gold transition-colors duration-300">Home</a>
+                    <a href="#" class="hover:text-gold transition-colors duration-300">About</a>
+                    <a href="#" class="hover:text-gold transition-colors duration-300">Projects</a>
+                    <a href="#" class="hover:text-gold transition-colors duration-300">Contact</a>
+                </nav>
+            </header>
+
+            <!-- Main Content -->
+            <main class="fade-in" style="animation-delay: 0.2s;">
+                <!-- Main Heading -->
+                <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold text-navy tracking-tight">
+                    Welcome to the digital space of <span class="text-gold">Om Prakesh</span>
+                </h1>
+                
+                <!-- Subheading -->
+                <p class="mt-6 text-base sm:text-lg text-gray-500 tracking-widest uppercase">
+                    Empowering Ideas & Inspiring Action
+                </p>
+                
+                <!-- Introduction Text -->
+                <p class="mt-10 text-lg sm:text-xl text-navy max-w-3xl mx-auto leading-relaxed">
+                    Hi, I’m Om Prakesh. I'm delighted to have you here. This space is a reflection of my work, my thoughts, and my professional journey. I hope you find something that resonates with you.
+                </p>
+
+                <!-- Key Points Section -->
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                    <!-- Point 1 -->
+                    <div class="border-t-2 border-gold pt-6">
+                        <h3 class="font-bold text-2xl text-navy font-serif">Purpose</h3>
+                        <p class="text-gray-600 mt-2">This website is where passion meets purpose, showcasing projects designed to create meaningful value.</p>
+                    </div>
+                    <!-- Point 2 -->
+                    <div class="border-t-2 border-gold pt-6">
+                        <h3 class="font-bold text-2xl text-navy font-serif">Insight</h3>
+                        <p class="text-gray-600 mt-2">Discover insights, stories, and ideas that matter. Let's explore and learn together.</p>
+                    </div>
+                    <!-- Point 3 -->
+                    <div class="border-t-2 border-gold pt-6">
+                        <h3 class="font-bold text-2xl text-navy font-serif">Collaboration</h3>
+                        <p class="text-gray-600 mt-2">Let's connect to collaborate, create, and grow. I believe the best work is done together.</p>
+                    </div>
+                </div>
+
+                <!-- Closing Message -->
+                <p class="mt-16 text-lg text-navy">
+                    Thank you for visiting.
+                </p>
+
+                <!-- Call to Action Buttons -->
+                <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#" class="w-full sm:w-auto bg-navy text-white font-bold py-3 px-10 rounded-md hover:bg-navy-dark transition-all duration-300 transform hover:scale-105">
+                        Explore My Work
+                    </a>
+                    <a href="#" class="w-full sm:w-auto bg-transparent text-navy font-bold py-3 px-10 rounded-md border-2 border-navy hover:bg-navy hover:text-white transition-all duration-300">
+                        Get In Touch
+                    </a>
+                </div>
+            </main>
+
+            <!-- Footer -->
+            <footer class="mt-24 text-center text-gray-400 text-sm fade-in" style="animation-delay: 0.4s;">
+                <p class="tracking-widest">EXPLORE | CONNECT | ACHIEVE</p>
+                <p class="mt-3">&copy; 2024 Om Prakesh. All Rights Reserved.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
